@@ -1,21 +1,21 @@
 {
-  "name": "tercera-entrega",
-  "version": "1.0.0",
-  "description": "",
-  "main": "productManager.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon ./src/app.js",
-    "start": "node ./src/app.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.19.2",
-    "express-handlebars": "^7.1.2",
-    "mongoose": "^8.3.3",
-    "socket.io": "^4.7.5",
-    "sweetalert2": "^11.10.8"
-  }
+   "name": "tercera-entrega",
+   "version": "1.0.0",
+   "description": "",
+   "main": "productManager.js",
+   "type": "module",
+   "scripts": {
+      "dev": "nodemon ./src/app.js",
+      "start": "node ./src/app.js"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "express": "^4.19.2",
+      "express-handlebars": "^7.1.2",
+      "mongoose": "^8.3.3",
+      "socket.io": "^4.7.5",
+      "sweetalert2": "^11.10.8"
+   }
 }
