@@ -33,7 +33,7 @@ const expressServer = app.listen(PORT, () => {
 
 const io = new Server(expressServer);
 
-io.on('connection', async socket => {
+io.on('connection', async (socket) => {
    // Products
    const productos = await productModel.find();
    socket.emit('productos', productos);

@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/realtimeproducts', (req, res) => {
-   return res.render('realTimeProducts', { style: 'style.css', title: 'Real Time' });
+   return res.render('realTimeProducts', { style: 'style.css', title: 'RealTimeProducts' });
 });
 
 router.get('/chat', (req, res) => {

@@ -5,8 +5,7 @@ import { productModel } from '../models/products.js';
 export const getProducts = async (req = request, res = response) => {
    try {
       const { limit } = req.query;
-      const productos = await productModel.find().limit(Number(limit));
-      const total = await productModel.countDocuments();
+      const [productos, total ] = await Promise.all([productModel.find().limit(Number(limit)), productModel.countDocuments()]);
       return res.json({ total, productos });
    } catch (error) {
       console.log('getProducts -> ', error);
